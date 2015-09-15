@@ -31,7 +31,7 @@
             android:id="@+id/title"
             android:layout_gravity="center"
             android:contentDescription="@string/desc_list_item_icon"
-            android:paddingLeft="16dp"
-            android:textColor="@color/primaryColorText" />
+            android:textSize="20sp"
+            android:textColor="@color/abc_primary_text_disable_only_material_dark" />
     </LinearLayout>
 </LinearLayout>

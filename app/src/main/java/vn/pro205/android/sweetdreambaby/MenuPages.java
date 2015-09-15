@@ -83,7 +83,8 @@ public class MenuPages extends ActionBarActivity {
                 .getResourceId(2, -1)));
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons
                 .getResourceId(3, -1)));
-
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[4], navMenuIcons
+                .getResourceId(4, -1)));
         // Recycle the typed array
         navMenuIcons.recycle();
 

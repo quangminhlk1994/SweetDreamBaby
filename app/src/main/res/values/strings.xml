@@ -9,14 +9,15 @@
         <item>Favorites</item>
         <item>My Books</item>
         <item>Settings</item>
-        <item>Settings</item>
+        <item>Abouts</item>
     </string-array>
 
     <string-array name="nav_drawer_icons_user">
-        <item>@drawable/icon_home</item>
-        <item>@drawable/icon_huongdan</item>
-        <item>@drawable/icon_xephang</item>
-        <item>@drawable/icon_caidat</item>
+        <item>@drawable/ic_features</item>
+        <item>@drawable/ic_favorites</item>
+        <item>@drawable/ic_mybooks</item>
+        <item>@drawable/ic_settings</item>
+        <item>@drawable/ic_about</item>
     </string-array>
     <string name="title_activity_trang_chu">TrangChu</string>
 
