@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="vn.pro205.android.sweetdreambaby.SplashScreen.SplashScreen"
+            android:name=".SplashScreen.SplashScreen"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -18,13 +18,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="vn.pro205.android.sweetdreambaby.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="vn.pro205.android.sweetdreambaby.TrangChu"
+            android:name=".TrangChu"
             android:label="@string/title_activity_trang_chu" >
+        </activity>
+        <activity
+            android:name=".MinhActivity"
+            android:label="@string/title_activity_minh" >
         </activity>
     </application>
 

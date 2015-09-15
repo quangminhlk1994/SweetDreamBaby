@@ -38,5 +38,6 @@
         <item>Tháng 12</item>
         <item>Cả Năm</item>
     </string-array>
+    <string name="title_activity_minh">MinhActivity</string>
 
 </resources>
