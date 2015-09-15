@@ -9,6 +9,7 @@
         <item>Favorites</item>
         <item>My Books</item>
         <item>Settings</item>
+        <item>Settings</item>
     </string-array>
 
     <string-array name="nav_drawer_icons_user">
