@@ -39,7 +39,7 @@ public class MyBooksAdapter extends ArrayAdapter<String>
         TextView txtAuthor = (TextView) convertView.findViewById(R.id.txtAuthor);
         Button btnBuy = (Button) convertView.findViewById(R.id.btnBuy);
         // Populate the data into the template view using the data object
-        imgIcon.setImageResource(image[position]);
+        imgIcon.setImageResource((image[position]));
         txtTitle.setText(books[position]);
         txtAuthor.setText(books[position]);
         btnBuy.setText("buy");

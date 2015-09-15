@@ -17,8 +17,8 @@ public class MyBooks extends android.app.ListFragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment//
         //aaa
-        String [] books= {"Test1","Test2"};
-        int [] image = {R.drawable.lordofring,R.drawable.lordofring};
+        String [] books= {"Test1","Test2","Test3","Test4","Test5","Test6"};
+        int [] image = {R.drawable.lordofring,R.drawable.lordofring,R.drawable.xmenfirstclass,R.drawable.xmenfirstclass,R.drawable.lordofring,R.drawable.xmenfirstclass};
         MyBooksAdapter adapter = new MyBooksAdapter(getActivity(),books,image);
         setListAdapter(adapter);
 
