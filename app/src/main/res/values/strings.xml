@@ -39,5 +39,10 @@
         <item>Cả Năm</item>
     </string-array>
     <string name="title_activity_minh">MinhActivity</string>
+    <string name="title_activity_book_detail_page">BookDetailPage</string>
+    <string name="title_activity_playing_pages">PlayingPages</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_my_books">MyBooks</string>
+    <string name="title_activity_favorites">Favorites</string>
 
 </resources>

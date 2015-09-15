@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import vn.pro205.android.sweetdreambaby.MainActivity;
+import vn.pro205.android.sweetdreambaby.MenuPages;
 import vn.pro205.android.sweetdreambaby.R;
 
 /**
@@ -22,7 +22,7 @@ public class SplashScreen extends Activity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(SplashScreen.this, MainActivity.class);
+                Intent i = new Intent(SplashScreen.this, MenuPages.class);
                 startActivity(i);
                 finish();
             }

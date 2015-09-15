@@ -23,7 +23,7 @@ import vn.pro205.android.sweetdreambaby.navigation_drawer.NavDrawerItem;
 import vn.pro205.android.sweetdreambaby.navigation_drawer.NavDrawerListAdapter;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MenuPages extends ActionBarActivity {
 
     /*
        Navigation Drawer
@@ -55,7 +55,7 @@ public class MainActivity extends ActionBarActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setTitle("abc");
+        getSupportActionBar().setTitle("Sweet Dream Baby");
 
         /*
          * Navigation Drawer
@@ -147,18 +147,20 @@ public class MainActivity extends ActionBarActivity {
         Fragment fragment = null;
         switch (position) {
             case 0:
-                fragment = new TrangChu();
+                fragment = new FeaturePages();
                 break;
             case 1:
-                //fragment = new HTML();
+                fragment = new Favorites();
                 break;
             case 2:
-                fragment = new GioiThieu();
+                fragment = new MyBooks();
                 break;
             case 3:
-                //fragment = new Javascript();
+                fragment = new Settings();
                 break;
-
+            case 4:
+                fragment = new About();
+                break;
             default:
                 break;
         }
