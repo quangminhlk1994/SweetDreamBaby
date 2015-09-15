@@ -5,7 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class MyBooks extends android.app.Fragment {
+import vn.pro205.android.sweetdreambaby.Adapters.MyBooksAdapter;
+
+public class MyBooks extends android.app.ListFragment {
 
     public MyBooks() {
         // Required empty public constructor
@@ -15,9 +17,10 @@ public class MyBooks extends android.app.Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment//
         //aaa
-
-
-
+        String [] books= {"Test1","Test2"};
+        int [] image = {R.drawable.lordofring,R.drawable.lordofring};
+        MyBooksAdapter adapter = new MyBooksAdapter(getActivity(),books,image);
+        setListAdapter(adapter);
 
 
         //Button
@@ -31,6 +34,11 @@ public class MyBooks extends android.app.Fragment {
         //     }
         //  }); -->
         return view;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 }
 

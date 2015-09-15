@@ -9,20 +9,20 @@
         <item>Favorites</item>
         <item>My Books</item>
         <item>Settings</item>
-        <item>Abouts</item>
+        <item>About</item>
     </string-array>
 
     <string-array name="nav_drawer_icons_user">
         <item>@drawable/ic_features</item>
+        <item>@drawable/ic_browse</item>
         <item>@drawable/ic_favorites</item>
-        <item>@drawable/ic_mybooks</item>
         <item>@drawable/ic_settings</item>
         <item>@drawable/ic_about</item>
     </string-array>
     <string name="title_activity_trang_chu">TrangChu</string>
 
 
-    <string name="title_activity_minh">MinhActivity</string>
+
     <string name="title_activity_book_detail_page">BookDetailPage</string>
     <string name="title_activity_playing_pages">PlayingPages</string>
     <string name="title_activity_settings">Settings</string>
