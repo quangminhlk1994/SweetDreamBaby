@@ -2,20 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#9B9B9B">
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="3dp"
+        android:background="#9B9B9B"
         android:paddingBottom="3dp">
 
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:background="#9B9B9B"
             android:id="@+id/icon"
-            android:src="@mipmap/pdt"
+            android:src="@drawable/abc_btn_radio_material"
             android:layout_gravity="center"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"

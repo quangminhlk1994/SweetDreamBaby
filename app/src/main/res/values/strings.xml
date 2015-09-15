@@ -1,17 +1,14 @@
 <resources>
-    <string name="app_name">Quản Lý Chi Tiêu</string>
+    <string name="app_name">Sweet Dream Baby</string>
     <string name="desc_list_item_icon">Item Icon</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="img"></string>
-    <string name="dsThu">KHOẢN THU</string>
-    <string name="dsChi">KHOẢN CHI</string>
     <string-array name="nav_drawer_title_user">
-        <item>Trang chủ</item>
-        <item>Giới Thiệu</item>
-        <item>Hướng Dẫn</item>
-        <item>Cài đặt</item>
+        <item>Features</item>
+        <item>Favorites</item>
+        <item>My Books</item>
+        <item>Settings</item>
     </string-array>
 
     <string-array name="nav_drawer_icons_user">
@@ -22,22 +19,7 @@
     </string-array>
     <string name="title_activity_trang_chu">TrangChu</string>
 
-<!-- TODO: Remove or change this placeholder text -->
-    <string-array name="spnThang_array">
-        <item>Tháng 1</item>
-        <item>Tháng 2</item>
-        <item>Tháng 3</item>
-        <item>Tháng 4</item>
-        <item>Tháng 5</item>
-        <item>Tháng 6</item>
-        <item>Tháng 7</item>
-        <item>Tháng 8</item>
-        <item>Tháng 9</item>
-        <item>Tháng 10</item>
-        <item>Tháng 11</item>
-        <item>Tháng 12</item>
-        <item>Cả Năm</item>
-    </string-array>
+
     <string name="title_activity_minh">MinhActivity</string>
     <string name="title_activity_book_detail_page">BookDetailPage</string>
     <string name="title_activity_playing_pages">PlayingPages</string>
