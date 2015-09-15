@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/backgroundhome"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="vn.pro205.android.sweetdreambaby.TrangChu">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundhome"
+            android:id="@+id/spnThang" />
+
+    </TableRow>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/linearLayout">
+
+        <org.eazegraph.lib.charts.BarChart
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/barchart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:padding="10dp"
+            app:egFixedBarWidth="true"
+            app:egBarWidth="20dp"
+            app:egLegendHeight="40dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearLayout"
+        android:gravity="center_horizontal">
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/btnphannhom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@mipmap/ic_luu"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            fab:fab_colorNormal="#E0F7FA"
+            fab:fab_colorPressed="#A5D6A7"
+            fab:fab_colorRipple="#A5D6A7"
+            android:layout_gravity="bottom|left"
+            android:layout_weight="1" />
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/btnthongke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@mipmap/ic_thongke"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            fab:fab_colorNormal="#E0F7FA"
+            fab:fab_colorPressed="#A5D6A7"
+            fab:fab_colorRipple="#A5D6A7"
+            android:layout_gravity="bottom|left"
+            android:layout_weight="1" />
+
+
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/btnadd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:src="@mipmap/ic_news"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            fab:fab_colorNormal="#E0F7FA"
+            fab:fab_colorPressed="#A5D6A7"
+            fab:fab_colorRipple="#A5D6A7"
+            android:layout_weight="1"
+            android:layout_gravity="bottom" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
