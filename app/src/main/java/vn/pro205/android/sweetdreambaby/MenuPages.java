@@ -127,6 +127,9 @@ public class MenuPages extends ActionBarActivity {
         }
     }
 
+    private void getText(String mores) {
+    }
+
     /**
      * Slide menu item click listener
      */
@@ -175,6 +178,7 @@ public class MenuPages extends ActionBarActivity {
             mDrawerList.setItemChecked(position, true);
             mDrawerList.setSelection(position);
             setTitle(navMenuTitles[position]);
+
             mDrawerLayout.closeDrawer(mDrawerLinearLayout);
         } else {
             // error in creating fragment
