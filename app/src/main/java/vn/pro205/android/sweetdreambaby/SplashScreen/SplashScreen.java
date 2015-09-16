@@ -12,7 +12,7 @@ import vn.pro205.android.sweetdreambaby.R;
  * Created by PhamDucThinh on 2/7/2015.
  */
 public class SplashScreen extends Activity {
-    private static int SPLASH_TIME_OUT = 5000;
+    private static int SPLASH_TIME_OUT = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -4,11 +4,13 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RatingBar;
+import android.widget.TextView;
 
 import vn.pro205.android.sweetdreambaby.Adapters.MyBooksAdapter;
 
-public class MyBooks extends android.app.ListFragment {
-
+public class MyBooks extends android.app.ListFragment implements RatingBar.OnRatingBarChangeListener{
+TextView txtValue;
     public MyBooks() {
         // Required empty public constructor
     }
@@ -22,10 +24,7 @@ public class MyBooks extends android.app.ListFragment {
         MyBooksAdapter adapter = new MyBooksAdapter(getActivity(),books,image);
         setListAdapter(adapter);
 
-
-        //Button
         View view = inflater.inflate(R.layout.activity_my_books, container, false);
-
         //  FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.btnadd);
         //   fab.setOnClickListener(new View.OnClickListener() {
         //      @Override
@@ -33,9 +32,23 @@ public class MyBooks extends android.app.ListFragment {
         //         Toast.makeText(getActivity(), "TTEst", Toast.LENGTH_LONG).show();
         //     }
         //  }); -->
-        return view;
+
+        txtValue = (TextView) view.findViewById(R.id.txtRatingValue);
+        RatingBar ratingBar = (RatingBar) view.findViewById(R.id.ratingBar);
+        ratingBar.setOnRatingBarChangeListener(this);
+
+
+    return view;
+
     }
 
+
+
+    public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+
+        txtValue.setText(String.valueOf(rating));
+
+    }
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

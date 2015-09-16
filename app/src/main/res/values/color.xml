@@ -11,4 +11,5 @@
     <color name="backgroundhome">#A5D6A7</color>
     <color name="ColorPrimary">#FF5722</color>
     <color name="ColorPrimaryDark">#E64A19</color>
+    <color name="white">#FFFFFF</color>
 </resources>
