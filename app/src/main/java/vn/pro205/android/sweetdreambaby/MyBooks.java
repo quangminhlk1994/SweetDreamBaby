@@ -1,20 +1,21 @@
 package vn.pro205.android.sweetdreambaby;
 
+import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
 import vn.pro205.android.sweetdreambaby.Adapters.MyBooksAdapter;
 
-public class MyBooks extends android.app.ListFragment {
+public class MyBooks extends android.app.Fragment {
 
-
+    ListView lists;
+    Fragment fragment = null;
     public MyBooks() {
         // Required empty public constructor
     }
@@ -34,27 +35,29 @@ public class MyBooks extends android.app.ListFragment {
             titleBook.add("Title Story " + i);
         }
 
-        MyBooksAdapter adapter = new MyBooksAdapter(getActivity(), titleBook,typeBook, image);
-        setListAdapter(adapter);
-
         View view = inflater.inflate(R.layout.activity_my_books, container, false);
-       final ListView lists=(ListView)view.findViewById(android.R.id.list);
+        lists = (ListView)view.findViewById(R.id.list);
+        MyBooksAdapter adapter = new MyBooksAdapter(getActivity(), titleBook,typeBook, image);
+        lists.setAdapter(adapter);
+
         lists.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getActivity().getApplicationContext(), "Yea!!! click ho gae called", Toast.LENGTH_LONG).show();
-            }
+                fragment = new Fragment() {
 
-    /*        public void onListItemClick(ListView l, View v, int position, long id) {
-                Toast.makeText(getActivity().getApplicationContext(), "Yea!!! click ho gae called", Toast.LENGTH_SHORT).show();
-            }
+                    public void restartAnimation() {
 
-            */
+                    }
+
+                    public void onReset() {
+
+                    }
+                };
+            }
         });
-
 
         return view;
     }
 
-
 }
+
