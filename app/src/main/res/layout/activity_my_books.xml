@@ -10,6 +10,11 @@
         android:background="@drawable/customshapelist"
         android:id="@id/android:list"
         android:scrollbars="none"
-        android:dividerHeight="5dp"/>
+        android:dividerHeight="5dp"
+        android:divider="@color/primaryColor"
+        android:footerDividersEnabled="true"
+        />
 
 </RelativeLayout>
+
+

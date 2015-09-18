@@ -201,6 +201,8 @@ public class MenuPages extends ActionBarActivity {
         super.onConfigurationChanged(newConfig);
         // Pass any configuration change to the drawer toggls
         mDrawerToggle.onConfigurationChanged(newConfig);
+
+
     }
 
     @Override
@@ -224,4 +226,5 @@ public class MenuPages extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }*/
+
 }

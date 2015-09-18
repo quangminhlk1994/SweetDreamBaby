@@ -37,7 +37,5 @@ public class Favorites extends android.app.Fragment {
         return view;
     }
 
-
-
 }
 

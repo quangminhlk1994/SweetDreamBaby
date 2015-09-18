@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 import vn.pro205.android.sweetdreambaby.R;
 
 /**
@@ -18,11 +20,11 @@ public class MyBooksAdapter extends ArrayAdapter<String>
 
 {
 
-    String [] titleBook;
+    ArrayList<String> titleBook;
     String [] typeBook;
     int [] image;
 
-    public MyBooksAdapter(Activity context, String[] titleBook, String[] typeBook, int[] image) {
+    public MyBooksAdapter(Activity context, ArrayList<String> titleBook, String[] typeBook, int[] image) {
         super(context,R.layout.custom_items_list_adapter,titleBook);
         this.image = image;
         this.typeBook = typeBook;
@@ -43,7 +45,7 @@ public class MyBooksAdapter extends ArrayAdapter<String>
         Button btnBuy = (Button) convertView.findViewById(R.id.btnBuy);
         // Populate the data into the template view using the data object
         imgIcon.setImageResource((image[position]));
-        txtTitle.setText(titleBook[position]);
+        txtTitle.setText(titleBook.get(position));
         txtAuthor.setText(typeBook[position]);
         btnBuy.setText("buy");
                 // Return the completed view to render on screen
