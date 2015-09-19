@@ -39,7 +39,7 @@ public class MyBooks extends android.app.Fragment {
         lists = (ListView)view.findViewById(R.id.list);
         MyBooksAdapter adapter = new MyBooksAdapter(getActivity(), titleBook,typeBook, image);
         lists.setAdapter(adapter);
-
+        //Event list
         lists.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
