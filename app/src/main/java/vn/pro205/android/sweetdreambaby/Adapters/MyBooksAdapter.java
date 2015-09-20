@@ -21,10 +21,10 @@ public class MyBooksAdapter extends ArrayAdapter<String>
 {
 
     ArrayList<String> titleBook;
-    String [] typeBook;
-    int [] image;
+    ArrayList<String> typeBook;
+    Integer [] image;
 
-    public MyBooksAdapter(Activity context, ArrayList<String> titleBook, String[] typeBook, int[] image) {
+    public MyBooksAdapter(Activity context, ArrayList<String> titleBook, ArrayList<String> typeBook, Integer [] image) {
         super(context,R.layout.custom_items_list_adapter,titleBook);
         this.image = image;
         this.typeBook = typeBook;
@@ -44,9 +44,9 @@ public class MyBooksAdapter extends ArrayAdapter<String>
         TextView txtAuthor = (TextView) convertView.findViewById(R.id.txtAuthor);
         Button btnBuy = (Button) convertView.findViewById(R.id.btnBuy);
         // Populate the data into the template view using the data object
-        imgIcon.setImageResource((image[position]));
+        imgIcon.setImageResource(image[position]);
         txtTitle.setText(titleBook.get(position));
-        txtAuthor.setText(typeBook[position]);
+        txtAuthor.setText(typeBook.get(position));
         btnBuy.setText("buy");
                 // Return the completed view to render on screen
         return convertView;
