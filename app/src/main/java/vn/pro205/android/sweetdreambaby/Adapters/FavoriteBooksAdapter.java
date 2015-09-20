@@ -34,7 +34,8 @@ public class FavoriteBooksAdapter extends ArrayAdapter<String>{
         if(convertView == null)
         {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.custom_items_list_adapter, parent, false);
-        }ImageView imgIcon = (ImageView) convertView.findViewById(R.id.imageView);
+        }
+        ImageView imgIcon = (ImageView) convertView.findViewById(R.id.imageView);
         TextView txtTitle = (TextView) convertView.findViewById(R.id.txtTitle);
         TextView txtAuthor = (TextView) convertView.findViewById(R.id.txtAuthor);
         Button btnBuy = (Button) convertView.findViewById(R.id.btnBuy);
