@@ -3,7 +3,6 @@
     package="vn.pro205.android.sweetdreambaby" >
 
     <application
-
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,7 +10,7 @@
         <activity
             android:name=".SplashScreen.SplashScreen"
             android:label="@string/app_name"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,11 +20,8 @@
         <activity
             android:name=".MenuPages"
             android:label="@string/app_name"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
         </activity>
-
-
-
     </application>
 
 </manifest>
