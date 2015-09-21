@@ -46,7 +46,23 @@
                 android:gravity="center"
                 android:textColor="@color/primaryColor"
                 android:textSize="14dp"
-                android:textStyle="italic" />
+                android:textStyle="italic"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar"
+                android:isIndicator="false"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy"
+                android:id="@+id/button"
+                android:background="@drawable/customshapebutton"
+                android:layout_gravity="center_horizontal" />
 
 
         </LinearLayout>
