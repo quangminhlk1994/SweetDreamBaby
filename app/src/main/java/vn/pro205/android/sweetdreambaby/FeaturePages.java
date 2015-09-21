@@ -24,7 +24,7 @@ public class FeaturePages extends Fragment {
 
 
         //Button
-        View view = inflater.inflate(R.layout.activity_trang_chu, container, false);
+        View view = inflater.inflate(R.layout.activity_features_page, container, false);
 
      //  FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.btnadd);
      //   fab.setOnClickListener(new View.OnClickListener() {
