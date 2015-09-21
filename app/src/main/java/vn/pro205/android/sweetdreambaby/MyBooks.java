@@ -1,6 +1,5 @@
 package vn.pro205.android.sweetdreambaby;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,7 +13,7 @@ import vn.pro205.android.sweetdreambaby.Adapters.MyBooksAdapter;
 public class MyBooks extends android.app.Fragment {
 
     ListView lists;
-    Fragment fragment = null;
+
     public MyBooks() {
         // Required empty public constructor
     }
